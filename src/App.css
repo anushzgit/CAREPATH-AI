@@ -1872,3 +1872,682 @@ select:focus-visible {
   color: #65776a;
   opacity: 1;
 }
+
+/* CAREPATH AI — soft medical background details */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero::before {
+  content: "+";
+  position: absolute;
+  top: 35px;
+  right: 42%;
+  z-index: -1;
+  color: #e4f3e7;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: "+";
+  position: absolute;
+  bottom: 35px;
+  left: 42%;
+  z-index: -1;
+  color: #eaf6ee;
+  font-size: 64px;
+  font-weight: 400;
+  pointer-events: none;
+}
+
+.art-backdrop {
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      #d3efdc 0%,
+      #e9f7ed 45%,
+      #f8fcf8 76%
+    );
+}
+
+.preview-card {
+  border-color: #dcefe1;
+  box-shadow:
+    0 28px 75px rgba(25, 135, 84, 0.13),
+    0 4px 14px rgba(32, 56, 43, 0.04);
+}
+
+.hero h1 .headline-blue {
+  color: #148765;
+}
+
+
+/* Premium healthcare hero visual */
+.hero-art {
+  position: relative;
+  isolation: isolate;
+  border-radius: 32px;
+}
+
+.hero-art::before {
+  content: "";
+  position: absolute;
+  inset: 22px 8px;
+  z-index: -2;
+  border-radius: 30px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(16, 70, 53, 0.04),
+      rgba(16, 70, 53, 0.2)
+    ),
+    url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=85")
+      center / cover no-repeat;
+  box-shadow: 0 24px 60px rgba(20, 108, 67, 0.13);
+}
+
+.hero-art .art-backdrop {
+  background: rgba(222, 244, 229, 0.3);
+  backdrop-filter: blur(2px);
+}
+
+.hero-art .art-orbit {
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+.hero-art .preview-card {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 25px 65px rgba(16, 55, 37, 0.2);
+}
+
+.hero-art .art-label {
+  border-color: #d9eddf;
+  box-shadow: 0 12px 32px rgba(16, 55, 37, 0.15);
+}
+
+/* Decorative medical plus symbols */
+.hero-art::after {
+  content: "+";
+  position: absolute;
+  top: 2px;
+  right: 18px;
+  z-index: -1;
+  color: #198754;
+  font-size: 64px;
+  font-weight: 500;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+/* Keep the photo layout comfortable on phones */
+@media (max-width: 760px) {
+  .hero-art::before {
+    inset: 18px 5px;
+    border-radius: 24px;
+  }
+}
+
+/* CAREPATH AI — premium hospital finder section */
+
+.finder-section {
+  position: relative;
+}
+
+.section-intro {
+  margin-bottom: 42px;
+}
+
+.section-intro h2 {
+  letter-spacing: -2px;
+}
+
+.finder-panel {
+  border-color: #d6e9dc;
+  border-radius: 28px;
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(190, 232, 207, 0.38),
+      transparent 38%
+    ),
+    linear-gradient(145deg, #ffffff 0%, #fbfefb 100%);
+  box-shadow:
+    0 24px 65px rgba(25, 80, 48, 0.075),
+    0 3px 12px rgba(25, 80, 48, 0.025);
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.finder-panel:hover {
+  border-color: #c4e1cc;
+  box-shadow: 0 28px 72px rgba(25, 80, 48, 0.095);
+}
+
+.finder-icon {
+  border: 1px solid #d6ebdd;
+  background: linear-gradient(145deg, #e8f7ed, #d8f0e2);
+  color: #147d61;
+}
+
+.demo-chip {
+  border-color: #cfe7d5;
+  background: #eaf7ee;
+  color: #176c49;
+}
+
+.select-container input,
+.select-container select {
+  border-color: #d7e6da;
+  border-radius: 13px;
+  background-color: rgba(255, 255, 255, 0.92);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.select-container input:focus,
+.select-container select:focus {
+  border-color: #299d76;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(41, 157, 118, 0.11);
+}
+
+.search-submit {
+  background: linear-gradient(110deg, #198754, #16866f);
+  box-shadow: 0 8px 20px rgba(25, 135, 84, 0.17);
+}
+
+.search-submit:hover {
+  background: linear-gradient(110deg, #146c43, #116b59);
+}
+
+.finder-footnote {
+  border-color: #e5efe6;
+}
+
+@media (max-width: 760px) {
+  .section-intro {
+    margin-bottom: 28px;
+  }
+
+  .finder-panel {
+    border-radius: 22px;
+  }
+}
+
+/* CAREPATH AI — premium result cards */
+
+.hospital-list {
+  gap: 18px;
+}
+
+.hospital-card {
+  border-color: #e0ece2;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(32, 56, 43, 0.035);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.hospital-card:hover {
+  border-color: #a8d6b6;
+  box-shadow: 0 15px 35px rgba(25, 90, 53, 0.09);
+  transform: translateY(-3px);
+}
+
+.hospital-card-best {
+  border-color: #b8dfc3;
+  background:
+    radial-gradient(
+      circle at 0% 0%,
+      rgba(216, 243, 224, 0.45),
+      transparent 55%
+    ),
+    #ffffff;
+}
+
+.hospital-monogram {
+  border-color: #d7ebdc;
+  border-radius: 17px;
+  background: linear-gradient(145deg, #e8f7ed, #d9f0e1);
+  color: #16774d;
+}
+
+.rank-label {
+  border-color: #cde8d4;
+  border-radius: 7px;
+  background: #eaf7ed;
+  color: #16774d;
+}
+
+.tag-row span {
+  border-color: #dcece0;
+  border-radius: 8px;
+  background: #f5faf6;
+  color: #47715a;
+}
+
+.time-total {
+  border-color: #d8ebdd;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #f0faf2, #e8f6ed);
+}
+
+.time-total > strong {
+  color: #148365;
+}
+
+.demo-status {
+  color: #788b7d;
+}
+
+.data-disclaimer {
+  padding: 12px 14px;
+  border: 1px solid #e7eee7;
+  border-radius: 12px;
+  background: #fbfdfb;
+}
+
+@media (max-width: 760px) {
+  .hospital-list {
+    gap: 14px;
+  }
+
+  .hospital-card {
+    border-radius: 17px;
+  }
+}
+
+/* CAREPATH AI — premium How It Works section */
+.how-section {
+  position: relative;
+  background:
+    radial-gradient(circle at 0% 20%, rgba(211, 241, 220, 0.35), transparent 35%),
+    #f8fcf8;
+  border-radius: 30px;
+}
+
+.how-grid {
+  gap: 22px;
+}
+
+.how-card {
+  border: 1px solid #dfede2;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 8px 26px rgba(32, 56, 43, 0.04);
+  transition: transform 0.22s ease, box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.how-card:hover {
+  transform: translateY(-4px);
+  border-color: #b9dfc4;
+  box-shadow: 0 16px 35px rgba(25, 90, 53, 0.08);
+}
+
+.how-card-number {
+  border: 1px solid #d4eadb;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #e8f7ed, #d8f0e2);
+  color: #16774d;
+}
+
+@media (max-width: 760px) {
+  .how-section {
+    border-radius: 22px;
+  }
+
+  .how-grid {
+    gap: 14px;
+  }
+
+  .how-card {
+    border-radius: 18px;
+  }
+}
+
+/* Healthcare photo banner */
+.care-photo-banner {
+  position: relative;
+  height: 340px;
+  margin: 30px 0 65px;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #e8f7ed;
+  box-shadow: 0 18px 45px rgba(25, 90, 53, 0.12);
+}
+
+.care-photo-banner img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.care-photo-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 42px 7%;
+  background: linear-gradient(
+    90deg,
+    rgba(12, 47, 34, 0.82) 0%,
+    rgba(12, 47, 34, 0.53) 48%,
+    rgba(12, 47, 34, 0.05) 100%
+  );
+  color: white;
+}
+
+.care-photo-overlay span {
+  margin-bottom: 14px;
+  color: #c8f4d5;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.care-photo-overlay h2 {
+  max-width: 480px;
+  margin: 0 0 12px;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+}
+
+.care-photo-overlay p {
+  max-width: 400px;
+  margin: 0;
+  color: #effaf2;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .care-photo-banner {
+    height: 300px;
+    margin: 20px 0 42px;
+    border-radius: 20px;
+  }
+
+  .care-photo-overlay {
+    padding: 25px;
+    background: linear-gradient(
+      90deg,
+      rgba(12, 47, 34, 0.8),
+      rgba(12, 47, 34, 0.3)
+    );
+  }
+}
+
+/* CAREPATH AI — editorial healthcare photo gallery */
+.care-gallery {
+  margin: 70px 0;
+}
+
+.care-gallery-heading {
+  margin-bottom: 28px;
+}
+
+.care-gallery-heading h2 {
+  margin: 10px 0;
+  color: #20382b;
+  font-size: clamp(28px, 4vw, 40px);
+  letter-spacing: -1.5px;
+}
+
+.care-gallery-heading p {
+  color: #65776a;
+  line-height: 1.7;
+}
+
+.care-gallery-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 18px;
+}
+
+.care-gallery-main,
+.care-gallery-small {
+  position: relative;
+  min-height: 230px;
+  overflow: hidden;
+  border: 1px solid #dcebe0;
+  border-radius: 22px;
+  background: #e8f7ed;
+}
+
+.care-gallery-main {
+  min-height: 490px;
+}
+
+.care-gallery-side {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 18px;
+}
+
+.care-gallery-main img,
+.care-gallery-small img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.care-gallery-main:hover img,
+.care-gallery-small:hover img {
+  transform: scale(1.04);
+}
+
+.care-gallery-caption {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 45px 22px 20px;
+  color: white;
+  background: linear-gradient(transparent, rgba(13, 44, 31, 0.82));
+}
+
+.care-gallery-caption span {
+  color: #c8f4d5;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.care-gallery-caption h3 {
+  margin: 7px 0 0;
+  font-size: 19px;
+}
+
+@media (max-width: 650px) {
+  .care-gallery {
+    margin: 45px 0;
+  }
+
+  .care-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .care-gallery-main {
+    min-height: 320px;
+  }
+
+  .care-gallery-side {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 210px;
+    gap: 12px;
+  }
+
+  .care-gallery-small {
+    min-height: 210px;
+  }
+
+  .care-gallery-caption {
+    padding: 35px 12px 14px;
+  }
+
+  .care-gallery-caption h3 {
+    font-size: 15px;
+  }
+}
+
+/* Soft sage-green tint for healthcare photos */
+.care-gallery-main img,
+.care-gallery-small img {
+  filter: saturate(0.82) contrast(0.97);
+}
+
+.care-gallery-main::after,
+.care-gallery-small::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(116, 175, 132, 0.13);
+  pointer-events: none;
+  transition: background 0.3s ease;
+}
+
+.care-gallery-main:hover::after,
+.care-gallery-small:hover::after {
+  background: rgba(116, 175, 132, 0.04);
+}
+
+/* How It Works — healthcare photo */
+.how-photo {
+  position: relative;
+  height: 260px;
+  margin: 28px 0 34px;
+  overflow: hidden;
+  border: 1px solid #dcebe0;
+  border-radius: 22px;
+  background: #e8f7ed;
+}
+
+.how-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 40%;
+  filter: saturate(0.82);
+}
+
+.how-photo-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 6%;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(17, 65, 45, 0.78),
+    rgba(17, 65, 45, 0.15)
+  );
+}
+
+.how-photo-overlay span {
+  color: #d0f2d9;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.how-photo-overlay h3 {
+  max-width: 420px;
+  margin: 12px 0 0;
+  font-size: clamp(22px, 3vw, 32px);
+  line-height: 1.25;
+}
+
+@media (max-width: 600px) {
+  .how-photo {
+    height: 230px;
+    border-radius: 18px;
+  }
+
+  .how-photo-overlay {
+    padding: 22px;
+  }
+}
+
+/* Mission section — hospital photo */
+.mission-section {
+  display: grid;
+  grid-template-columns: auto 1fr 0.9fr;
+  align-items: center;
+  gap: 32px;
+}
+
+.mission-photo {
+  position: relative;
+  min-height: 310px;
+  overflow: hidden;
+  border: 1px solid #dcebe0;
+  border-radius: 22px;
+  background: #e8f7ed;
+}
+
+.mission-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.82);
+}
+
+.mission-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(116, 175, 132, 0.1);
+  pointer-events: none;
+}
+
+.mission-photo-label {
+  position: absolute;
+  z-index: 1;
+  inset: auto 12px 12px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #20382b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.mission-photo-label span {
+  margin-right: 8px;
+  color: #198754;
+}
+
+@media (max-width: 760px) {
+  .mission-section {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .mission-photo {
+    min-height: 240px;
+  }
+}

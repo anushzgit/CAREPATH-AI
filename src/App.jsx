@@ -389,6 +389,65 @@ function App() {
             </div>
           </div>
         </section>
+        
+<div className="care-photo-banner">
+  <img
+    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=85"
+    alt="Doctor discussing healthcare with a patient"
+  />
+  <div className="care-photo-overlay">
+    <span>CARE THAT PUTS YOU FIRST</span>
+    <h2>Better health starts with the right care.</h2>
+    <p>Explore your options. Take your next step with confidence.</p>
+  </div>
+</div>
+
+
+<section className="care-gallery">
+  <div className="care-gallery-heading">
+    <div className="eyebrow">HEALTHCARE, REIMAGINED</div>
+    <h2>A closer look at better care.</h2>
+    <p>Discover a more thoughtful way to explore healthcare options.</p>
+  </div>
+
+  <div className="care-gallery-grid">
+    <div className="care-gallery-main">
+      <img
+        src="https://nerlekarhospital.com/_next/image?q=75&url=%2Fimages%2Fhospital-interior.png&w=1920"
+        alt="Healthcare professional caring for a patient"
+      />
+      <div className="care-gallery-caption">
+        <span>01</span>
+        <h3>Care that puts you first</h3>
+      </div>
+    </div>
+
+    <div className="care-gallery-side">
+      <div className="care-gallery-small">
+        <img
+          src="https://glass.health/images/splash/specialty/primary.webp?utm_source=chatgpt.com"
+          alt="Doctor in a modern clinical setting"
+        />
+        <div className="care-gallery-caption">
+          <span>02</span>
+          <h3>Expertise you can trust</h3>
+        </div>
+      </div>
+
+      <div className="care-gallery-small">
+        <img
+          src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=900&q=85"
+          alt="Healthcare team working together"
+        />
+        <div className="care-gallery-caption">
+          <span>03</span>
+          <h3>Better care, together</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         <section className="finder-section" id="finder">
           <div className="section-intro">
@@ -631,6 +690,18 @@ function App() {
             </div>
             <h2>Three steps. A clearer way forward.</h2>
             <p>Preview the hospital-finder experience using sample data.</p>
+
+<div className="how-photo">
+  <img
+    src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=1000&q=85"
+    alt="Healthcare professional in a clinical setting"
+  />
+  <div className="how-photo-overlay">
+    <span>CARE WITH CONFIDENCE</span>
+    <h3>Your next step starts with better information.</h3>
+  </div>
+</div>
+
           </div>
 
           <div className="how-grid">
@@ -678,6 +749,19 @@ function App() {
               filtering and rerouting experience.
             </p>
           </div>
+          
+
+<div className="mission-photo">
+  <img
+    src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=85"
+    alt="Bright modern hospital interior"
+  />
+  <div className="mission-photo-label">
+    <span>+</span>
+    Thoughtful care. Clearer choices.
+  </div>
+</div>
+
 
           <button
             className="button-primary"
