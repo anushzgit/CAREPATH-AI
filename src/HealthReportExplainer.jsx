@@ -142,13 +142,11 @@ export default function HealthReportExplainer() {
     setLoading(true);
 
     try {
-      const response = await fetch(
-  `${import.meta.env.VITE_API_BASE_URL}/api/explain-report`,
-  {
-    method: "POST",
-    body: formData,
-  }
-);
+      const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "";
+      const response = await fetch(`${apiBaseUrl}/api/explain-report`, {
+        method: "POST",
+        body: formData,
+      });
 
       const data = await response.json();
 
