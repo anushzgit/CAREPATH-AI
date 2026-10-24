@@ -6,9 +6,16 @@ import multer from "multer";
 import { GoogleGenAI } from "@google/genai";
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
-app.use(cors({ origin: "http://localhost:5173" }));
+
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://carepath-ai.vercel.app"
+  ]
+}));
+
 
 const upload = multer({
   storage: multer.memoryStorage(),
