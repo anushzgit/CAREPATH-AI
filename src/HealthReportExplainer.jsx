@@ -142,8 +142,7 @@ export default function HealthReportExplainer() {
     setLoading(true);
 
     try {
-      const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "";
-      const response = await fetch(`${apiBaseUrl}/api/explain-report`, {
+      const response = await fetch("/api/explain-report", {
         method: "POST",
         body: formData,
       });
